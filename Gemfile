@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+gem 'tzinfo'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
 gem "jekyll", ">=3.8.6"
 
 # Official Plugins
