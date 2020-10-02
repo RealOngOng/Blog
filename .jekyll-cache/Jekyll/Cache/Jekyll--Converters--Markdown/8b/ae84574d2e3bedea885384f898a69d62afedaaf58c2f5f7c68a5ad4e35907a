@@ -1,4 +1,4 @@
-I"?�<p><a href="https://www.acmicpc.net/problem/19943">문제 링크</a></p>
+I"�<p><a href="https://www.acmicpc.net/problem/19943">문제 링크</a></p>
 
 <p>예선 당일 이 문제를 보고 기하 문제인가? 라고 생각했었다. 왜냐하면 정올에서 생각보다 킬러문제로 기하 부분을 많이내기 때문이다.</p>
 
@@ -36,9 +36,9 @@
 
 <p>이러한 1번 조각품 같은 케이스를 어떻게 검출할까. 아래의 이미지를 보면 된다.</p>
 
-<p><img src="https://i.imgur.com/MFrdNor.png" alt="Imgur" /></p>
+<p><img src="https://i.imgur.com/Ep7Zmf4.png" alt="Imgur" /></p>
 
-<p><img src="https://i.imgur.com/ydYrdis.png" alt="Imgur" /></p>
+<p><img src="https://i.imgur.com/JVCo8SQ.png" alt="Imgur" /></p>
 
 <p>왜 이게 성립되는 지는 직접 여러 케이스를 만들어서 해보자.</p>
 
@@ -57,6 +57,8 @@
 <p><img src="https://i.imgur.com/86xK7gT.png" alt="Imgur" /></p>
 
 <p>이런식으로 전개가 ConvexHull Trick을 적용할 수 있는 형태가 된다.</p>
+
+<p>또한 x_j+1 - y_j+1 부분이 단조형태야 되는 데 처음에는 단조형태를 가지고 있지 않지만 조명등 설치 후보를 추려내게 되면 단조형태를 띈다는 것을 알 수 있다.</p>
 
 <h2 id="3-소스코드"><strong>3. 소스코드</strong></h2>
 
