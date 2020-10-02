@@ -6,20 +6,24 @@ layout: page
 # MIT Licensed
 ---
 
-<div id="page-category">
-  <h1 class="pl-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    {{ page.title }}
-    <span class="lead text-muted pl-2">{{ site.categories[page.category] | size }}</span>
-  </h1>
+{% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign categories_list = site_categories | split:',' | sort %}
 
-  <ul class="post-content pl-0">
-    {% for post in site.categories[page.category] %}
-    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">{{ post.date | date: site.data.date_format.post.long }}</span>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="entry-meta inline-list">
+  {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
+    </a></li>
+  {% endunless %}{% endfor %}
+</ul>
+
+{% for item in (0..site.categories.size) %}{% unless forloop.last %}
+  {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
+  <article>
+	  <a><h2>{{ this_word }}</h2></a>
+    <ul>
+    {% for post in site.categories[this_word] %}{% if post.title != null %}
+      <li class="entry-title"><a href="{{ site.url }}/Blog/{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endif %}{% endfor %}
+		</ul>
+    </article><!-- /.hentry -->
+{% endunless %}{% endfor %}

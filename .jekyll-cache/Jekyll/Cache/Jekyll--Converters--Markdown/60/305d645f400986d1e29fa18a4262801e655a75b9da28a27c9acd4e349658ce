@@ -1,0 +1,7 @@
+I"�<ul id="post-list">
+    {\% for post in site.categories.algorithm \%}
+        {\% include 리스트레이아웃.html \%}
+    {\% endfor \%}
+</ul>
+<p>{\% include pagination.html \%}</p>
+:ET
