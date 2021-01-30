@@ -18,7 +18,7 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'https://RealOngOng.github.io/'
+url: 'https://realongong.github.io'
 
 author: OngOng                 # change to your full name
 
@@ -202,3 +202,6 @@ sitemap_exclude:  # Sitemap will exclude the following items.
     - sitemap.xml
     - robots.txt
     - redirects.json
+
+plugins:
+ - jekyll-sitemap
