@@ -1,3 +1,12 @@
+---
+title: "한국애니메이션 고등학교 알고리즘 교내 대회 풀이"
+date: 2021-05-29 11:33:00 +0800
+categories: [Algorithm]
+tags: [Contest]
+use_math: true
+
+---
+
 ## A. 4개의 직사각형의 넓이
 
  ### 문제 출처 : 코드업 
