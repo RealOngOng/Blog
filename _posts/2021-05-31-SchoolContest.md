@@ -231,7 +231,7 @@ $\frac{N}{3} \le c < \frac{N}{2}$를 탐색하면서 모든 쌍을 $O(N)$에 찾
 
 이 방법은 작은 거에서 큰거 $(Small To Large)$라는 테크닉으로 알려져 있으며 왜 시간을 엄청나게 줄일 수 있는 지는 https://justicehui.github.io/medium-algorithm/2019/09/23/small-to-large/ 에서 참고할 수 있다.
 
-최종적으로 문제를 $$O(Qlog^2N)$$ 에 문제를 해결할 수 있다.
+최종적으로 문제를 $O(Qlog^2N)$ 에 문제를 해결할 수 있다.
 
 이 문제의 아이디어는 제 UNIST 알고리즘 프로그래밍 경시대회 G번 야바위(BOJ 20315)에서 참고했다.
 
